@@ -15,12 +15,19 @@ import { TestService } from "./test.service";
   
         </ul>
 
+        <h2 [textContent]="title"></h2>
+        
+        <img src="{{ imUrl }}" />
+
+        <img [src]="title" />
+
     `
 
 })
 
 export class TestComponent {
     title = "List of Courses"
+    imUrl="http://www.gebbebero.elementfx.com/wp-content/uploads/19.jpg";
 
    tcourse;
 
