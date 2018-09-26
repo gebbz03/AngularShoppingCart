@@ -1,6 +1,7 @@
 
 
 import { Component } from "@angular/core";
+import { TestService } from "./test.service";
 
 
 @Component({
@@ -21,6 +22,14 @@ import { Component } from "@angular/core";
 export class TestComponent {
     title = "List of Courses"
 
-   tcourse=["course1","course2","course3"];
+   tcourse;
+
+
+   constructor(service: TestService){
+    //let service =new TestService();
+    this.tcourse=service.getTest();
+
+
+   }
 
 }
