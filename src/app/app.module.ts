@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { TestComponent } from './test.component';
 import { TestService } from './test.service';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    TestComponent,
+    ContactFormComponent
     
   ],
   imports: [
